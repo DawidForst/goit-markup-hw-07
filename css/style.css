@@ -42,13 +42,15 @@ body {
   color: var(--p-color);
 }
 
-.container-top {
-  display: flex;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 15px;
+.header {
   margin: 0 auto;
-  align-items: center;
+  background: var(--semi-text-color);
+  max-width: 1200px;
+  line-height: 1.19;
+  color: var(--h-color);
+  display: flex;
+  padding: 24px 0px 25px 0px;
+  border-bottom: solid 1px #ececec;
 }
 .container {
   display: block;
@@ -81,22 +83,12 @@ body {
   padding-bottom: 94px;
 }
 
-.nav-menu {
-  background: var(--semi-text-color);
-
-  line-height: 1.19;
-  color: var(--h-color);
-  display: flex;
-  padding: 24px 0px 25px 0px;
-  border-bottom: solid 1px #ececec;
-}
-.logo > span {
-  align-items: center;
-  display: flex;
-  color: var(--h-color);
+.logo-top > span {
+  color: black;
 }
 
-.logo-top {
+.logo-bottom {
+  color: var(--semi-text-color);
   display: flex;
   font-family: "Raleway";
   font-weight: 700;
@@ -104,10 +96,11 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--hover-links-color);
-  /* margin-left: auto; */
+  padding-bottom: 20px;
 }
-.logo-top > span {
-  color: black;
+
+.logo-bottom > span {
+  color: var(--semi-text-color);
 }
 
 .flex-nav {
@@ -487,7 +480,7 @@ body {
 /* .footer-items {
   margin-left: 215px;
 } */
-.logo {
+.logo-top {
   display: flex;
   font-family: "Raleway";
   font-weight: 700;
@@ -495,14 +488,13 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--hover-links-color);
-  padding-bottom: 20px;
 }
 
-.logo > span {
+/* .logo > span {
   color: var(--semi-text-color);
   line-height: 1.19;
   display: flex;
-}
+} */
 .address-bottom {
   font-size: 14px;
   font-style: normal;
@@ -651,7 +643,7 @@ body {
 .footer-icons {
   display: flex;
   list-style: none;
-  margin-left: 70px;
+  margin-left: 82px;
   gap: 10px;
   padding: 0;
 }
@@ -786,7 +778,7 @@ figure {
   outline: none;
 }
 .form-hover:hover > .form-input,
-.form-hover:focus > .form-input,
+.form-hover:focus-within > .form-input,
 .form-hover:active > .form-input {
   border: var(--hover-links-color) 1px solid;
   box-shadow: none;
@@ -794,6 +786,9 @@ figure {
 }
 .form-hover:hover > .form-icons,
 .form-hover:focus > .form-icons {
+  fill: var(--hover-links-color);
+}
+.form-hover:focus-within {
   fill: var(--hover-links-color);
 }
 

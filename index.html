@@ -18,8 +18,8 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <header class="nav-menu">
-      <div class="container-top">
+    <header class="header">
+    
       <a class="logo-top" href="index.html">Web<span>Studio</span></a>
 
       <nav class="flex-nav">
@@ -59,7 +59,7 @@
         </svg>+48 111 111 111</a>
         </li>
       </ul>
-      </div>
+
     </header>
     <main>
       <section class="main section img-background">
@@ -416,8 +416,8 @@
       <section class="container-footer">
         
         <div class="footer-contacts">
-        <a class="logo" href="index.html"
-          >Web<span class="logo-bottom">Studio</span></a
+        <a class="logo-bottom" href="index.html"
+          >Web<span>Studio</span></a
         >
 
         <address>
@@ -499,34 +499,34 @@
               </svg>
           </button>
           <h6 class="form-header">Zostaw swoje dane w formularzu poniżej</h6>
-          <form  name="name" autocomplete="on" novalidate>
-          <label for="full-name" class="form-hover">
+          <form  name="order-form" autocomplete="on" >
+         
+            <label for="full-name" class="form-hover"> 
               <span class="description">Imie</span>
-              
               <svg class="form-icons icon-position1">
                   <use xlink:href="./images/sprite.svg#person-logo" width="14" height="14"></use>
               </svg><input type="text" name="user-name" class="form-input" id="full-name">
-            </label></form>
-          <form name="phone" autocomplete="on">
+            </label>
+          
 
           <label for="phone-number" class="form-hover">
             <span class="description">Telefon</span>
               <svg class="form-icons icon-position2">
                   <use xlink:href="./images/sprite.svg#phone-logo" width="15" height="15"></use>
               </svg><input type="tel" name="phone-number" class="form-input" id="phone-number">
-          </label></form>
-          <form name="email" autocomplete="on">
+          </label>
+          
             <label for="email" class="form-hover">
             <span class="description">Emial</span>
               <svg class="form-icons icon-position3">
                   <use xlink:href="./images/sprite.svg#email2-logo" width="17" height="17">
                   </use>
               </svg><input type="email" name="email" class="form-input" id="email">
-          </label></form>
-          <form name="comment" autocomplete="off" novalidate><label>
+          </label>
+       
             <span class="description">Komentarz</span>
               <textarea name="comment" placeholder="Wprowadź tekst" class="form-input form-comment"></textarea>
-          </label></form>
+          </form>
           <label class="terms-and-conditions">
               <input type="checkbox">
               <svg class="tick">

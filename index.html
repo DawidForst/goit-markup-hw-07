@@ -19,48 +19,52 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo-top" href="index.html">Web<span>Studio</span></a>
+      <div class="header__container">
+        <a class="logo-top" href="index.html">Web<span>Studio</span></a>
 
-      <nav class="navigation-section">
-        <ul class="navigation">
-          <li class="navigation__list-item">
-            <a class="navigation__item navigation__actives" href="index.html"
-              >Agencja</a
+        <nav class="navigation-section">
+          <ul class="navigation">
+            <li class="navigation__list-item">
+              <a
+                class="navigation__item navigation__item--actives"
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__item" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__item" href="index.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="top-contact">
+          <li>
+            <a
+              class="top-contact__icons--mail top-contact__icons"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="top-contact__svg" width="16" height="12">
+                <use xlink:href="./images/sprite.svg#email-logo"></use>
+              </svg>
+
+              info@devstudio.com</a
             >
           </li>
-          <li class="navigation__list-item">
-            <a class="navigation__item" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="navigation__list-item">
-            <a class="navigation__item" href="index.html">Kontakt</a>
+          <li>
+            <a
+              class="top-contact__icons--phone top-contact__icons"
+              href="tel:+48111111111"
+              ><svg class="top-contact__svg" width="10" height="16">
+                <use xlink:href="./images/sprite.svg#smartphone-logo"></use>
+              </svg>
+              +48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="top-contact">
-        <li>
-          <a
-            class="top-contact__mail top-contact__icons"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="top-contact__svg" width="16" height="12">
-              <use xlink:href="./images/sprite.svg#email-logo"></use>
-            </svg>
-
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a
-            class="top-contact__phone top-contact__icons"
-            href="tel:+48111111111"
-            ><svg class="top-contact__svg" width="10" height="16">
-              <use xlink:href="./images/sprite.svg#smartphone-logo"></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="main">
@@ -128,9 +132,9 @@
           </li>
         </ul>
       </section>
-      <section class="container">
-        <h2 class="main__header">Czym się zajmujemy</h2>
-        <ul class="services">
+      <section class="container section">
+        <h2 class="section__header">Czym się zajmujemy</h2>
+        <ul class="services section--no-top">
           <li class="services__img">
             <figure class="services__figure">
               <img
@@ -173,7 +177,7 @@
       </section>
       <section class="background-team section">
         <div class="container">
-          <h2 class="main__header">Nasz zespół</h2>
+          <h2 class="section__header">Nasz zespół</h2>
           <ul class="team">
             <li class="team__item">
               <img
@@ -182,8 +186,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team__item__name">John Doe</h3>
-              <span class="team__item__job">Product Designer</span>
+              <h3 class="team__item--name">John Doe</h3>
+              <span class="team__item--job">Product Designer</span>
               <ul class="team__card-list">
                 <li>
                   <a href="#">
@@ -247,8 +251,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team__item__name">John Doe</h3>
-              <span class="team__item__job">Frontend Developer</span>
+              <h3 class="team__item--name">John Doe</h3>
+              <span class="team__item--job">Frontend Developer</span>
 
               <ul class="team__card-list">
                 <li>
@@ -313,8 +317,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team__item__name">John Doe</h3>
-              <span class="team__item__job">Marketing</span>
+              <h3 class="team__item--name">John Doe</h3>
+              <span class="team__item--job">Marketing</span>
               <ul class="team__card-list">
                 <li>
                   <a href="#">
@@ -378,8 +382,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team__item__name">John Doe</h3>
-              <span class="team__item__job">UI Designer</span>
+              <h3 class="team__item--name">John Doe</h3>
+              <span class="team__item--job">UI Designer</span>
               <ul class="team__card-list">
                 <li>
                   <a href="#">
@@ -440,8 +444,8 @@
       </section>
 
       <section class="section-clients">
-        <div class="container">
-          <h2 class="main__header">Nasi Klienci</h2>
+        <div class="container section">
+          <h2 class="section__header">Nasi Klienci</h2>
           <ul class="clients">
             <li>
               <a href="#">
@@ -618,7 +622,7 @@
               />
               <button type="submit" class="newslatter__button">
                 Zapisz się
-                <svg class="newslatter__button-logo">
+                <svg class="newslatter__button--logo">
                   <use
                     xlink:href="./images/sprite.svg#send"
                     width="24"

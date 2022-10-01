@@ -72,17 +72,18 @@
   &__terms-and-conditions {
     font-size: 14px;
     padding: 15px 0 20px 0;
+    & input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      &:checked ~ .modal__checkmark {
+        background-color: $hover-links-color;
+        border: none;
+      }
+    }
   }
-  &__terms-and-conditions input {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-  &__terms-and-conditions input:checked ~ .modal__checkmark {
-    background-color: $hover-links-color;
-    border: none;
-  }
+
   &__tick {
     position: absolute;
     width: 11px;
@@ -155,6 +156,13 @@
     &::placeholder {
       color: rgba(117, 117, 117, 0.658);
     }
+    &:hover,
+    &:focus,
+    &_:active {
+      border: $hover-links-color 1px solid;
+      box-shadow: none;
+      outline: none;
+    }
   }
 
   &__form-hover:hover > &__form-input,
@@ -170,13 +178,5 @@
   }
   &__form-hover:focus-within {
     fill: $hover-links-color;
-  }
-
-  &__form-comment:hover,
-  &__form-comment:focus,
-  &__form-comment:active {
-    border: $hover-links-color 1px solid;
-    box-shadow: none;
-    outline: none;
   }
 }

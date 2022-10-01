@@ -19,49 +19,52 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo-top" href="index.html">Web<span>Studio</span></a>
+      <div class="header__container">
+        <a class="logo-top" href="index.html">Web<span>Studio</span></a>
 
-      <nav class="navigation-section">
-        <ul class="navigation">
-          <li class="navigation__list-item">
-            <a class="navigation__item" href="index.html">Agencja</a>
-          </li>
-          <li class="navigation__list-item">
+        <nav class="navigation-section">
+          <ul class="navigation">
+            <li class="navigation__list-item">
+              <a
+                class="navigation__item navigation__item--actives"
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__item" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__item" href="index.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="top-contact">
+          <li>
             <a
-              class="navigation__item navigation__actives"
-              href="portfolio.html"
-              >Portfolio</a
+              class="top-contact__icons--mail top-contact__icons"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="top-contact__svg" width="16" height="12">
+                <use xlink:href="./images/sprite.svg#email-logo"></use>
+              </svg>
+
+              info@devstudio.com</a
             >
           </li>
-          <li class="navigation__list-item">
-            <a class="navigation__item" href="index.html">Kontakt</a>
+          <li>
+            <a
+              class="top-contact__icons--phone top-contact__icons"
+              href="tel:+48111111111"
+              ><svg class="top-contact__svg" width="10" height="16">
+                <use xlink:href="./images/sprite.svg#smartphone-logo"></use>
+              </svg>
+              +48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="top-contact">
-        <li>
-          <a
-            class="top-contact__mail top-contact__icons"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="top-contact__svg" width="16" height="12">
-              <use xlink:href="./images/sprite.svg#email-logo"></use>
-            </svg>
-
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a
-            class="top-contact__phone top-contact__icons"
-            href="tel:+48111111111"
-            ><svg class="top-contact__svg" width="10" height="16">
-              <use xlink:href="./images/sprite.svg#smartphone-logo"></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
@@ -96,10 +99,10 @@
       </section>
 
       <section class="container">
-        <ul class="grid">
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+        <ul class="product">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -116,14 +119,14 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Technocrack</h3>
-              <p class="grid__paragraph">Strona internetowa</p>
+            <div class="product__border">
+              <h3 class="product__header">Technocrack</h3>
+              <p class="product__paragraph">Strona internetowa</p>
             </div>
           </li>
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -140,15 +143,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Grafika New Orlean vs Golden Star</h3>
-              <p class="grid__paragraph">Dizajn</p>
+            <div class="product__border">
+              <h3 class="product__header">Grafika New Orlean vs Golden Star</h3>
+              <p class="product__paragraph">Dizajn</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -165,15 +168,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Restauracja Seafood</h3>
-              <p class="grid__paragraph">Aplikacja</p>
+            <div class="product__border">
+              <h3 class="product__header">Restauracja Seafood</h3>
+              <p class="product__paragraph">Aplikacja</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -190,15 +193,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Projekt Prime</h3>
-              <p class="grid__paragraph">Marketing</p>
+            <div class="product__border">
+              <h3 class="product__header">Projekt Prime</h3>
+              <p class="product__paragraph">Marketing</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -215,15 +218,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Projekt Boxes</h3>
-              <p class="grid__paragraph">Aplikacja</p>
+            <div class="product__border">
+              <h3 class="product__header">Projekt Boxes</h3>
+              <p class="product__paragraph">Aplikacja</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -240,15 +243,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Inspiration has no Borders</h3>
-              <p class="grid__paragraph">Strona internetowa</p>
+            <div class="product__border">
+              <h3 class="product__header">Inspiration has no Borders</h3>
+              <p class="product__paragraph">Strona internetowa</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -265,15 +268,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Magazyn Limited Edition</h3>
-              <p class="grid__paragraph">Dizajn</p>
+            <div class="product__border">
+              <h3 class="product__header">Magazyn Limited Edition</h3>
+              <p class="product__paragraph">Dizajn</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -290,15 +293,15 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Projekt Lab</h3>
-              <p class="grid__paragraph">Marketing</p>
+            <div class="product__border">
+              <h3 class="product__header">Projekt Lab</h3>
+              <p class="product__paragraph">Marketing</p>
             </div>
           </li>
 
-          <li class="grid__item">
-            <div class="grid__info">
-              <div class="grid__info-anime">
+          <li class="product__item">
+            <div class="product__info">
+              <div class="product__info--anime">
                 <p>
                   Technocrack jest popularną<br />
                   platformą wykorzystywaną do<br />
@@ -315,9 +318,9 @@
               width="370"
               height="294"
             />
-            <div class="grid__border">
-              <h3 class="grid__header">Growing Business</h3>
-              <p class="grid__paragraph">Aplikacja</p>
+            <div class="product__border">
+              <h3 class="product__header">Growing Business</h3>
+              <p class="product__paragraph">Aplikacja</p>
             </div>
           </li>
         </ul>
@@ -415,7 +418,7 @@
               />
               <button type="submit" class="newslatter__button">
                 Zapisz się
-                <svg class="newslatter__button-logo">
+                <svg class="newslatter__button--logo">
                   <use
                     xlink:href="./images/sprite.svg#send"
                     width="24"

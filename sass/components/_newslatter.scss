@@ -52,14 +52,13 @@
       border: 1px solid $hover-links-color;
       box-shadow: none;
     }
-
-    &--logo {
-      position: absolute;
-      fill: $semi-text-color;
-      width: 65px;
-      height: 24px;
-      margin-left: -4px;
-      margin-top: -2px;
-    }
+  }
+  &__icon {
+    position: absolute;
+    fill: $semi-text-color;
+    width: 65px;
+    height: 24px;
+    margin-left: -4px;
+    margin-top: -2px;
   }
 }

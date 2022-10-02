@@ -16,36 +16,34 @@
       fill: $hover-links-color;
       color: $hover-links-color;
     }
+  }
+  &__mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $paragraph-color;
+    margin-left: auto;
 
-    &--mail {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: $paragraph-color;
-      margin-left: auto;
-
-      &:hover {
-        color: $hover-links-color;
-      }
-    }
-
-    &--phone {
-      width: 115px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: $paragraph-color;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: fill, color;
-
-      &:hover {
-        color: $hover-links-color;
-      }
+    &:hover {
+      color: $hover-links-color;
     }
   }
 
+  &__phone {
+    width: 115px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $paragraph-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, color;
+
+    &:hover {
+      color: $hover-links-color;
+    }
+  }
   &__svg {
     margin-right: 10px;
     justify-content: center;

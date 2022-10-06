@@ -7,6 +7,7 @@
   margin-top: 50px;
   margin-bottom: 94px;
   margin-left: auto;
+  flex-wrap: wrap;
 
   &__header {
     display: flex;
@@ -36,9 +37,23 @@
     overflow: hidden;
     font-size: 16px;
     line-height: 1.875;
+
     /* border: 1px solid #eeeeee; */
     /* identical to box height, or 188% */
-    flex-basis: calc((100% - 60px) / 3);
+    // flex-basis: calc((100% - 60px) / 3);
+
+    @media screen and (min-width: 768px) {
+      & {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        flex-basis: calc((100% - 60px) / 3);
+      }
+    }
+
     letter-spacing: 0.03em;
     text-align: center;
     color: $paragraph-color;
